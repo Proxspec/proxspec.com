@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultation | Proxspec</title>
+  <meta
+    name="description"
+    content="Start a consultation with Proxspec for websites, branding, consulting, outreach, events, and strategic support."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand-mark">
+        <span class="brand-mark__dot"></span>
+        <a class="brand-mark__name" href="index.html">Proxspec</a>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+      </nav>
+      <a class="header-cta" href="services.html">Explore Services</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+    </div>
+
+    <main class="inner-page">
+      <section class="page-hero reveal">
+        <p class="eyebrow">Consultation</p>
+        <h1>Let’s talk through what you need and where Proxspec can help most.</h1>
+        <p class="page-hero__lede">
+          This page is the first step for clients who want support with websites, branding, outreach, events, strategy,
+          or growth planning. We can turn this into a real intake form next.
+        </p>
+      </section>
+
+      <section class="section consultation-grid">
+        <article class="story-panel reveal">
+          <p class="eyebrow">Best For</p>
+          <h2>People who need a partner, not just a task completed.</h2>
+          <p>Startups, nonprofits, community projects, and growing businesses that need clarity, execution, and steady support.</p>
+        </article>
+        <article class="story-panel story-panel--soft reveal reveal--delay">
+          <p class="eyebrow">Next Build Step</p>
+          <h2>This can become your intake and booking page.</h2>
+          <p>We can add a form, scheduling links, service-specific questionnaires, or a cleaner lead capture flow once you decide how you want inquiries handled.</p>
+        </article>
+      </section>
+
+      <section class="section visual-band reveal">
+        <div class="visual-band__image visual-band__image--consultation"></div>
+        <div class="visual-band__content">
+          <p class="eyebrow">A Better First Step</p>
+          <h2>The consultation experience should feel personal, clear, and easy to move through.</h2>
+          <p>
+            This page is where people begin the relationship. Adding visuals here helps the page feel more welcoming
+            and more complete while we turn it into a real intake flow.
+          </p>
+        </div>
+      </section>
+
+      <section class="section image-triptych reveal">
+        <div class="image-triptych__item image-triptych__item--workspace"></div>
+        <div class="image-triptych__item image-triptych__item--conversation"></div>
+        <div class="image-triptych__item image-triptych__item--city"></div>
+      </section>
+
+      <section class="section contact-callout reveal">
+        <div class="contact-callout__content">
+          <p class="eyebrow">Contact Proxspec</p>
+          <h2>Ready to talk through your project, organization, or next move?</h2>
+          <p>Use the options below to start the consultation process. Proxspec supports clients with websites, branding, planning, outreach, events, and growth-focused strategy.</p>
+        </div>
+        <div class="contact-actions">
+          <button class="button button--primary consultation-trigger" type="button" data-contact-method="email">Start Email Request</button>
+          <button class="button button--secondary consultation-trigger" type="button" data-contact-method="call">Request a Call</button>
+        </div>
+      </section>
+
+      <section class="section request-panel reveal" id="request-form-section" hidden>
+        <div class="request-panel__intro">
+          <p class="eyebrow">Request Form</p>
+          <h2>Tell Proxspec what you need and how you want to be contacted.</h2>
+          <p>Fill this out and Proxspec can save your request for follow-up and review.</p>
+        </div>
+
+        <iframe name="consultation-submit-frame" class="submit-frame" title="Hidden submission frame"></iframe>
+
+        <form
+          id="consultation-submit-relay"
+          action="https://script.google.com/macros/s/AKfycbxKzoAkp9XJ2SyZ-NX6tiknx3Ajt2HQnDfWClol7EuDvQaIDTf7xDFkkPo5AXVarlkr/exec"
+          method="post"
+          target="consultation-submit-frame"
+          class="submit-relay"
+        >
+          <input type="hidden" name="name">
+          <input type="hidden" name="organization">
+          <input type="hidden" name="email">
+          <input type="hidden" name="phone">
+          <input type="hidden" name="service">
+          <input type="hidden" name="preferred_contact">
+          <input type="hidden" name="details">
+        </form>
+
+        <form
+          class="request-form"
+          id="consultation-request-form"
+        >
+          <div class="request-form__grid">
+            <label class="field">
+              <span>Your Name</span>
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label class="field">
+              <span>Business or Organization</span>
+              <input type="text" name="organization" autocomplete="organization">
+            </label>
+          </div>
+
+          <div class="request-form__grid">
+            <label class="field">
+              <span>Your Email</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label class="field">
+              <span>Your Phone</span>
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+          </div>
+
+          <div class="request-form__grid">
+            <label class="field">
+              <span>Service You’re Interested In</span>
+              <select name="service">
+                <option value="General consultation">General consultation</option>
+                <option value="Website development">Website development</option>
+                <option value="Branding and print">Branding and print</option>
+                <option value="Consulting and planning">Consulting and planning</option>
+                <option value="Social media support">Social media support</option>
+                <option value="Community and government support">Community and government support</option>
+                <option value="Events and activation">Events and activation</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Preferred Contact</span>
+              <select name="preferred_contact" id="preferred-contact">
+                <option value="Email">Email</option>
+                <option value="Call">Call</option>
+                <option value="Either">Either</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="field">
+            <span>What do you need help with?</span>
+            <textarea name="details" rows="6" required></textarea>
+          </label>
+
+          <div class="request-form__actions">
+            <button class="button button--primary" type="submit">Continue Request</button>
+            <p class="request-form__note" id="request-form-note">Once connected, this form can send your request directly into Proxspec's system.</p>
+          </div>
+          <p class="request-form__status" id="request-form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
